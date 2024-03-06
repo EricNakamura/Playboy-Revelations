@@ -6,6 +6,7 @@ namespace plr {
 	class Player {
 	private:
 		sf::Vector2f position;
+		sf::Vector2f size;
 
 		int mass;
 
@@ -18,6 +19,9 @@ namespace plr {
 	public:
 		Player();
 		Player(std::string texturePath);
+
+		void Update();
+		void LateUpdate();
 
 		void Move(sf::Vector2f vector);
 	};

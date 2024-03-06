@@ -2,6 +2,7 @@
 # lógica específica a um projeto aqui.
 #
 cmake_minimum_required (VERSION 3.8)
+project (PlayboyRevelations)
 
 # Habilite a Recarga Dinâmica para compiladores MSVC, se houver suporte.
 if (POLICY CMP0141)
@@ -9,13 +10,10 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("PlayboyRevelations")
-
 # Adicione a origem ao executável deste projeto.
-add_executable (PlayboyRevelations "PlayboyRevelations.cpp" "PlayboyRevelations.h" "Player/Player.cpp" "Player/Player.h")
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET PlayboyRevelations PROPERTY CXX_STANDARD 20)
-endif()
+add_subdirectory("src")
 
+
+install(TARGETS PlayboyRevelations DESTINATION bin)
 # TODO: Adicione testes e instale destinos, se necessário.

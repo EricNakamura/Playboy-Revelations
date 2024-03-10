@@ -15,31 +15,20 @@
           "name": "PlayboyRevelations",
           "value": "PlayboyRevelations",
           "type": "FILEPATH"
-        },
-        {
-          "name": "CMAKE_INSTALL_PREFIX",
-          "value": "C:/Users/Eric Bafa/source/repos/PlayboyRevelations/bin",
-          "type": "PATH"
         }
       ]
     },
     {
       "name": "x64-Release",
       "generator": "Ninja",
-      "configurationType": "RelWithDebInfo",
+      "configurationType": "Release",
       "buildRoot": "${projectDir}\\bin\\${name}",
       "installRoot": "${projectDir}\\out\\install\\${name}",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "msvc_x64_x64" ],
-      "variables": [
-        {
-          "name": "CMAKE_BUILD_TYPE",
-          "value": "Debug",
-          "type": "STRING"
-        }
-      ]
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }

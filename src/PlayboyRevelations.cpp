@@ -17,7 +17,7 @@ int main()
 
 	Initilize();
 
-	plr::Camera camera(1.f);
+	plr::Camera camera(50.f);
 
 	while (window.isOpen())
 	{
@@ -35,7 +35,9 @@ int main()
 
 		window.setView(camera.getView(window.getSize()));
 		window.clear();
+		Update(deltaTime);
 		Render(window);
+		LateUpdate(deltaTime);
 		window.display();
 	}
 

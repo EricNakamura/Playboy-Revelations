@@ -3,20 +3,13 @@
     {
       "name": "x64-Debug",
       "generator": "Ninja",
-      "configurationType": "Debug",
+      "configurationType": "RelWithDebInfo",
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "buildRoot": "${projectDir}\\bin\\${name}",
       "installRoot": "${projectDir}\\out\\install\\${name}",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
-      "ctestCommandArgs": "",
-      "variables": [
-        {
-          "name": "PlayboyRevelations",
-          "value": "PlayboyRevelations",
-          "type": "FILEPATH"
-        }
-      ]
+      "ctestCommandArgs": ""
     },
     {
       "name": "x64-Release",

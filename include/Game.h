@@ -1,11 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-	
 
-	void Initilize();
 
-	void Update(float deltaTime);
+void Initilize(sf::RenderWindow& target);
 
-	void LateUpdate(float deltaTime);
+void Update(float deltaTime);
 
-	void Render(sf::RenderWindow& target);
+void LateUpdate(float deltaTime);
+
+void Render(sf::RenderWindow& target);

@@ -4,5 +4,5 @@
 
 namespace plr {
 
-void Normalize(sf::Vector2f vector); 
+	sf::Vector2f Normalize(sf::Vector2f vector);
 }
